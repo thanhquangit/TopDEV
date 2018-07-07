@@ -1,3 +1,39 @@
+.scroll-top-wrapper {
+    position: fixed;
+    opacity: 0;
+    visibility: hidden;
+	overflow: hidden;
+	text-align: center;
+	z-index: 99999999;
+    background-color: #777777;
+	color: #eeeeee;
+	width: 50px;
+	height: 48px;
+	line-height: 48px;
+	right: 30px;
+	bottom: 30px;
+	padding-top: 2px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+.scroll-top-wrapper:hover {
+	background-color: #888888;
+}
+.scroll-top-wrapper.show {
+    visibility:visible;
+    cursor:pointer;
+	opacity: 1.0;
+}
+.scroll-top-wrapper i.fa {
+	line-height: inherit;
+}
 body{
 	font-family: 'Roboto';
     font-weight: 400;
@@ -267,7 +303,7 @@ body{
 }
 .btn-recruit{
 	color: white;
-	padding-top: 10px;
+	padding-top: 7px;
 	height: 40px;
 	font-size: 20px;
 	width: 200px;
@@ -276,17 +312,24 @@ body{
 }
 .btn-recruit:hover{
 	color: white;
-	padding-top: 10px;
+	padding-top: 7px;
 	height: 40px;
 	width: 200px;
 	background-color: #e34c31;
 	text-align: center;
+}
+.blog{
+	height: auto;
 }.blog>h2{
 	padding-top: 30px;
 	text-align: center;
 }.blog>p{
 	padding-bottom: 30px;
 	text-align: center;
+}
+#blog>img{
+	height: 95%;width: 95%;
+
 }
 #date{
 	padding-top: 10px;
@@ -315,11 +358,56 @@ body{
 	text-decoration: none;
 }
 .footer{
-	padding-top: 350px;
+	padding-top: 40px;
+}
+#iconf{
+	padding-right: 5px;
+}
+.footerr{
+	padding-top: 50px;
+	padding-bottom: 10px;
+}
+.li-footer{
+	list-style: none;
+}
+.li-footer>li{
+	margin-left: -30px;
+}
+.li-footer>li>a{
+	line-height:2;
+	text-decoration: none;
+	color: #555;
+}
+.li-footer>li>a:hover{
+	line-height:2;
+	text-decoration: none;
+	color: #e24b30;
+}
+.copyright{
+	    color: #999;
+	text-align: center;
+}
+.img-copy{
+	float:right;
+	margin-top: 0px;
 }
 @media only screen and (max-width : 480px){
 	.li{
 		border-bottom: 1px solid #faeeff;
+	}
+	#title-blog{
+	font-size: 12px;
+	margin-right: 20px;
+    margin-bottom: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+	}
+	#summary-blog{
+		font-size: 12px;
+		margin-right: 20px;
+	    margin-bottom: 20px;
+	    letter-spacing: 2px;
 	}
 	.contact{
 		margin-top: -25px;
@@ -428,5 +516,22 @@ body{
     height: 400px;
     overflow-y: scroll;
     border: 1px solid #ddd;
+}
+.copyright{
+	margin-top: 90px;
+}
+.footer{
+	text-align: center;
+}
+.img-copy{
+	float: left;
+	margin-left: 80px;
+}
+.footer{
+	padding-top: 0px;
+}
+.blog-c{
+	
+	margin-left: 0px;
 }
 }
