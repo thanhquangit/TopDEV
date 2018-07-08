@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>All Job</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="bootstrap/js/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js "></script>
+    <script src="js/btn-top.js"></script>
+    <link href="css/chat.css" rel="stylesheet">
+    <link href="css/all-job.css" rel="stylesheet">
+    <script src="js/chat.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.4.2/chosen.jquery.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.4.2/chosen.css">
+    <style type="text/css">
+    	.chosen-container-single .chosen-single {
+		    position: relative;
+		    display: block;
+		    overflow: hidden;
+		    padding-top: 7px;
+		    font-size: 15px;
+		    padding: 0 8 0 8px;
+		    height: 40px;
+		    border: 1px solid #aaa;
+		    border-radius: 5px;
+		    background-color: white;
+		    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(20%, #ffffff), color-stop(50%, #f6f6f6), color-stop(52%, #eeeeee), color-stop(100%, #f4f4f4));
+		    background: -webkit-linear-gradient(top, #ffffff 20%, #f6f6f6 50%, #eeeeee 52%, #f4f4f4 100%);
+		    background: -moz-linear-gradient(top, #ffffff 20%, #f6f6f6 50%, #eeeeee 52%, #f4f4f4 100%);
+		    background: -o-linear-gradient(top, #ffffff 20%, #f6f6f6 50%, #eeeeee 52%, #f4f4f4 100%);
+		    background: linear-gradient(top, #ffffff 20%, #f6f6f6 50%, #eeeeee 52%, #f4f4f4 100%);
+		    background-clip: padding-box;
+		    box-shadow: 0 0 3px white inset, 0 1px 1px rgba(0, 0, 0, 0.1);
+		    color: #444;
+		    text-decoration: none;
+		    white-space: nowrap;
+		    line-height: 24px;
+		}
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="header">
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#"><img src="image/logo/logo.png" class="img-responsive logo"></a>
+                    </div>
+                    <div class="collapse navbar-collapse navbar-ex1-collapse">
+                        <ul class="nav navbar-nav nav-content">
+                            <li class="li"><a href="#" id="nav-content">All Jobs</a></li>
+                            <li class="li"><a href="#" id="nav-content">Your Salary</a></li>
+                            <li class="dropdown li">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="nav-content">Tech Events<b class="caret"></b></a>
+                                <ul class="dropdown-menu dropdown-tech">
+                                    <li class="li" id="li"><span><img src="image/logo/md_icon.png" class="img-responsive icon-tech-events"></span><a href="#" id="text-tech-events">VietNam Mobile Day</a></li>
+                                    <li class="li" id="li"><span><img src="image/logo/vnw_icon.png" class="img-responsive icon-tech-events"></span><a href="#" id="text-tech-events">VietNam Web Submit</a></li>
+                                    <li class="li" id="li"><span><img src="image/logo/techtalk_icon.png" class="img-responsive icon-tech-events"></span><a href="#" id="text-tech-events">TopDev Techtalk</a></li>
+                                </ul>
+                            </li>
+                            <li class="li"><a href="#" id="nav-content">Tech Blog</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right nav-content">
+                            <li class="li"><a><span class="contact"><i class="fa fa-phone" aria-hidden="true"></i> +84-28 62733496 | +84-28 62733497</span></a></li>
+                            <li class="li"><a href="#" target="_blank"><span class="fa fa-search search-header"></span></a></li>
+                            <li class="employers"><a href="#" target="_blank" id="text-emp"><span><b>EMPLOYERS</b> <br> Post Job & Find Talents</span></a></li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+            </nav>
+        </div>
+        <div style="background-color: #eee;height: auto;padding-bottom: 30px;">
+            <div class="container" style="padding-top: 40px;">
+                <div class="search-box">
+                    <div class="row">
+                        <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+                            <input type="text" name="search" placeholder="Enter Job Title, Position, Company" class="form-control">
+                        </div>
+                        <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+                            <select class="form-control chosen" style="height: 40px;">
+							  	<option >All location...</option>
+							  	<option>Ho Chi Minh</option>
+							  	<option>Ha Noi</option>
+							  	<option>Da Nang</option>
+							  	<option>Can Tho</option>
+							  	<option>Others</option>
+							</select>
+                        </div>
+                        <div class="col-xs-5 col-sm-5 col-md-2 col-lg-2">
+                            <input type="submit" name="search" value="Find Jobs" class="form-control btn-finds">
+                        </div>
+                    </div>
+                </div>
+                <div class="job-content">
+					<h3><span style="color: red;">255</span> Jobs</h3>
+					<div class="row">
+						<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+							<div class="itemjob">
+								<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+									<a href=""><img src="image/logo/job.jpg" class="img-responsive logo-jobs"></a>
+								</div>
+								<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 content-jobitems">
+									<h4>&nbsp <a href="">Java Full-Stack Technical Lead (Hibernate, Spring, English)</a><span><a href=""><i class="fa fa-envelope" style="float: right;color: #848484;"></i></a></span></h4>
+									<p id="addre"> &nbsp Restaff - House of Norway</p>
+									<p> &nbsp <i class="fa fa-map-marker" aria-hidden="true"></i> Ho Chi Minh  <i class="fa fa-cog" aria-hidden="true"></i> Product <i class="fa fa-usd" aria-hidden="true"></i><span style="color:#e24b30 "> $1,500 - $2,500</span></p>
+									<p id="tag-skill">
+										<a href="">Java</a>
+										<a href="">PHP</a>
+									</p>
+								</div>
+								<p>&nbsp</p>
+							</div>
+							<div class="itemjob">
+								<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+									<a href=""><img src="image/logo/job2.png" class="img-responsive logo-jobs"></a>
+								</div>
+								<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 content-jobitems">
+									<h4>&nbsp <a href="">Java Full-Stack Technical Lead (Hibernate, Spring, English)</a><span><a href=""><i class="fa fa-envelope" style="float: right;color: #848484;"></i></a></span></h4>
+									<p id="addre"> &nbsp Restaff - House of Norway</p>
+									<p> &nbsp <i class="fa fa-map-marker" aria-hidden="true"></i> Ho Chi Minh  <i class="fa fa-cog" aria-hidden="true"></i> Product <i class="fa fa-usd" aria-hidden="true"></i><span style="color:#e24b30 "> $1,500 - $2,500</span></p>
+									<p id="tag-skill">
+										<a href="">Java</a>
+										<a href="">PHP</a>
+									</p>
+								</div>
+								<p>&nbsp</p>
+							</div>
+						</div>
+						<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+							<div class="job-alert-banner">
+								<p><i class="fa fa-location-arrow" aria-hidden="true" style="color: #e34c31;"></i> Email me jobs like this</p>
+								<form>
+									<input type="text" name="" class="form-control" placeholder="example@gmail.com">
+									<input type="submit" name="" class="btn btn-danger form-control" value="Email me jobs like this">
+								</form>
+							</div>
+						</div>
+					</div>
+                </div>
+                <div class="job-content" style="padding-top: 2px;">
+                	<div class="grab">
+						<h2>Grab your next best jobs!</h2>
+						<form class="form-group" style="text-align: center;">
+							<div class="row">
+								<div class="col-xs-2 col-sm-2 col-md-1 col-lg-1 col-md-push-2">
+									<img src="image/logo/icon-email.png" class="img-responsive mail-logo" width="39" >
+								</div>
+								<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 col-md-push-2">
+									<input type="email" class="form-control" id="email" placeholder="example@gmail.com" style="height: 40px;">
+								</div>
+							  	<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-md-push-2">
+							  		<input type="submit" class="form-control btn btn-danger" id="pwd" value=" Email me jobs like this" style="height: 40px;">
+							  	</div>
+							</div>
+							
+						</form>
+					</div>
+				</div>
+				<div class="job-content" style="padding-top: 2px;">
+                	<div class="job-fit">
+						<h2>Jobs Fit For You</h2>
+						<div class="row" style="margin-right: 30px;margin-left: 30px;">
+							<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+								<div class="row">
+									<div class="item-foo">
+										<div class="col-xs-2 col-sm-2 col-md-4 col-lg-4">
+											<a href=""><img class="img-responsive logo" src="https://topdev.vn/files/logos/2129be27a83f3e3d796a37a5caff37f7.png" alt="05 Android Developers (Mobile)"></a>
+										</div>
+										<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 item-foo-cont">
+											<h5><b><a href="">05 Android Developers</a></b></h5>
+											<p id="tag-skill">
+												<a href="">Java</a>
+												<a href="">PHP</a>
+											</p>
+										</div>
+										<p  style="margin:0px 0px 0px 0px">&nbsp</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+								<div class="row">
+									<div class="item-foo">
+										<div class="col-xs-2 col-sm-2 col-md-4 col-lg-4">
+											<a href=""><img class="img-responsive logo" src="https://topdev.vn/files/logos/2129be27a83f3e3d796a37a5caff37f7.png" alt="05 Android Developers (Mobile)"></a>
+										</div>
+										<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 item-foo-cont">
+											<h5><b><a href="">05 Android Developers</a></b></h5>
+											<p id="tag-skill">
+												<a href="">Java</a>
+												<a href="">PHP</a>
+											</p>
+										</div>
+										<p  style="margin:0px 0px 0px 0px">&nbsp</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+								<div class="row">
+									<div class="item-foo">
+										<div class="col-xs-2 col-sm-2 col-md-4 col-lg-4">
+											<a href=""><img class="img-responsive logo" src="https://topdev.vn/files/logos/2129be27a83f3e3d796a37a5caff37f7.png" alt="05 Android Developers (Mobile)"></a>
+										</div>
+										<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 item-foo-cont">
+											<h5><b><a href="">05 Android Developers</a></b></h5>
+											<p id="tag-skill">
+												<a href="">Java</a>
+												<a href="">PHP</a>
+											</p>
+										</div>
+										<p  style="margin:0px 0px 0px 0px">&nbsp</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+								<div class="row">
+									<div class="item-foo">
+										<div class="col-xs-2 col-sm-2 col-md-4 col-lg-4">
+											<a href=""><img class="img-responsive logo" src="https://topdev.vn/files/logos/2129be27a83f3e3d796a37a5caff37f7.png" alt="05 Android Developers (Mobile)"></a>
+										</div>
+										<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 item-foo-cont">
+											<h5><b><a href="">05 Android Developers</a></b></h5>
+											<p id="tag-skill">
+												<a href="">Java</a>
+												<a href="">PHP</a>
+											</p>
+										</div>
+										<p  style="margin:0px 0px 0px 0px">&nbsp</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+								<div class="row">
+									<div class="item-foo">
+										<div class="col-xs-2 col-sm-2 col-md-4 col-lg-4">
+											<a href=""><img class="img-responsive logo" src="https://topdev.vn/files/logos/2129be27a83f3e3d796a37a5caff37f7.png" alt="05 Android Developers (Mobile)"></a>
+										</div>
+										<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 item-foo-cont">
+											<h5><b><a href="">05 Android Developers</a></b></h5>
+											<p id="tag-skill">
+												<a href="">Java</a>
+												<a href="">PHP</a>
+											</p>
+										</div>
+										<p  style="margin:0px 0px 0px 0px">&nbsp</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+								<div class="row">
+									<div class="item-foo">
+										<div class="col-xs-2 col-sm-2 col-md-4 col-lg-4">
+											<a href=""><img class="img-responsive logo" src="https://topdev.vn/files/logos/2129be27a83f3e3d796a37a5caff37f7.png" alt="05 Android Developers (Mobile)"></a>
+										</div>
+										<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 item-foo-cont">
+											<h5><b><a href="">05 Android Developers</a></b></h5>
+											<p id="tag-skill">
+												<a href="">Java</a>
+												<a href="">PHP</a>
+											</p>
+										</div>
+										<p  style="margin:0px 0px 0px 0px">&nbsp</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+        </div>
+        <div class="footer" >
+			<div style="background: #e2e2e2;">
+				<div class="container footerr">
+					<div class="row">
+						<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+							<h4><b>About TopDev</b></h4>
+							<ul class="li-footer">
+								<li><a href="">About Us</a></li>
+								<li><a href="">Contact Us</a></li>
+								<li><a href="">Terms of Service</a></li>
+								<li><a href="">Chính sách bảo mật</a></li>
+								<li><a href="">Quy chế hoạt động</a></li>
+								<li><a href="">Chính sách giải quyết khiếu nại</a></li>
+							</ul>
+						</div>
+						<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+							<h4><b>For Jobseekers</b></h4>
+							<ul class="li-footer">
+								<li><a href="">My Resumes</a></li>
+								<li><a href="">Browse jobs</a></li>
+							</ul>
+						</div>
+						<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+							<h4><b>For Employers</b></h4>
+							<ul class="li-footer">
+								<li><a href="">Post a Job</a></li>
+								<li><a href="">Talent solutions</a></li>
+								<li><a href="">Join our Job Ad Network</a></li>
+							</ul>
+						</div>
+						<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+							<h4><b>Subscribe to Us</b></h4>
+							<a href="" id="iconf"><img src="image/logo/in.png" height="40" width="40"></a>
+							<a href="" id="iconf"><img src="image/logo/googleplus.png" height="40" width="40"></a>
+							<a href="" ><img src="image/logo/facebook.png" height="40" width="40"></a>
+							<a href=""><img src="image/logo/ins.png" height="55" width="55"></a>
+						</div>
+					</div>
+					<div class="copyright">
+						<img src="image/logo/logo-bocongthuong.jpgx" class="img-responsive img-copy">
+						<p>Copyright © CÔNG TY CỔ PHẦN APPLANCER</p> 
+						<p>179 Nguyễn Đình Chính, Phường 11, Quận Phú Nhuận, Thành Phố Hồ Chí Minh, Việt Nam</p> 
+						<p>ĐKKD: 031 303 2338 - Cấp ngày: 27/11/2014 | Liên hệ: 028 6264 5022 - contact@applancer.net</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="scroll-top-wrapper ">
+		  	<span class="scroll-top-inner">
+		    	<i class="fa fa-2x fa-arrow-circle-up"></i>
+		  	</span>
+		</div>
+		<div class="msg_box" style="right:20px" rel="skp">
+		    <div class="msg_head" style="padding-top: 15px;padding-bottom: 15px;">Offline
+		        <div class="close">x</div>
+		    </div>
+		    <div class="msg_wrap">
+			    <div class="msg_body">
+			        <form>
+			            <div id="offlineFormMessageContainer" class="formMessageField">Please fill out the form below and we will get back to you as soon as possible.</div>
+			            <div class="form-group">
+			                <input type="text" name="email" placeholder="Name..." class="form-control">
+			            </div>
+			            <div class="form-group">
+			                <input type="text" name="email" placeholder="Email..." class="form-control">
+			            </div>
+			            <div class="form-group">
+			                <input type="text" name="email" placeholder="Phone..." class="form-control">
+			            </div>
+			            <div class="form-group">
+			                <textarea type="text" rows="2" placeholder="Content...." class="form-control"></textarea>
+			            </div>
+			            <input type="submit" name="" class="btn btn-danger form-control" value="Submit">
+			        </form>
+			   	</div>
+		    </div>
+		</div>
+    </div>
+    <script type="text/javascript">
+	  	jQuery(document).ready(function(){
+	  	jQuery(".chosen").chosen();
+	});
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+.search-box{
+	padding: 15px;
+	background-color: #324554;
+}
+.chosen{
+	height: 40px;
+}
+.btn-finds{
+    color: #fff;
+    background-color: #e34c31;
+    font-weight: bold;
+    border:1px solid #fff;
+}
+.btn-finds:hover {
+    color: #fff;
+    font-weight: bold;
+    background-color: #f7941d;
+    border-color: #f28809;
+    border:1px solid #fff;
+}.job-content{
+	background-color: white;
+	margin-top: 30px;
+	height: auto;
+	padding-bottom: 10px;
+}
+.job-content>h3{
+	padding-top: 30px;
+	padding-left: 30px;
+	font-weight: bold;
+}
+.itemjob {
+	padding: 25px 10px 0px 10px;
+    border: 1px solid #FFD8C7;
+    background: #fffbf8;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 0px;
+    height: auto;
+}
+.logo-jobs {
+    display: block;
+    border: 1px #c9eaf5 solid ;
+    margin: 0 auto;
+    margin-top:40px;
+    max-height: 43px;
+    max-width: 125px;
+}
+#tag-skill>a {
+    display: inline-block;
+    background: #f8f8f8;
+    color: #555;
+    text-decoration: none;
+    border: 1px solid #ddd!important;
+    padding: 1px 10px;
+    font-size: 12px;
+    border: none;
+    border-radius: 18px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}.content-jobitems>h4>a{
+	color: red;
+	text-decoration: none;
+	font-weight: bold;
+}
+#addre{
+	color: #444;
+	font-size: 15px;
+    font-weight: 400;
+}
+.fa-usd, .fa-cog{
+	padding-left: 15px;padding-right: 5px;
+}
+.job-alert-banner {
+    padding: 10px;
+    background: #324554;
+    margin-right: 20px;
+    margin-top: 10px;
+    color: #fff;
+}.job-alert-banner>form>input{
+	margin-bottom: 20px;
+}
+.grab{
+	margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 0px;
+	background: #324554;
+	margin-top: 30px;
+}
+.grab>h2{
+	font-size: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: white;
+	text-align: center;
+}
+.grab>form{
+	padding-bottom: 30px;
+}
+.job-fit>h2{
+	font-size: 20px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	color: #555;
+	text-align: center;
+}
+.item-foo{
+	margin:5px;
+    border: 1px solid #e5e5e5;
+}
+.item-foo>div>a>img{
+	margin-top: 30px;
+}
+.item-foo-cont{
+	margin-top: 20px;
+}
+.item-foo-cont>h5>b>a{
+	text-decoration: none;
+	color: black;
+}
